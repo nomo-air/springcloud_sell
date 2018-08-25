@@ -17,7 +17,7 @@ import java.util.List;
 @RestController
 @Slf4j
 public class ClientController {
-
+/*
     @Autowired
     private LoadBalancerClient loadBalancerClient;
 
@@ -51,5 +51,5 @@ public class ClientController {
         List<ProductInfo> productInfoList = productClient.listForOrder(Arrays.asList("164103465734242707"));
         log.info("response={}", productInfoList);
         return "ok";
-    }
+    }*/
 }
