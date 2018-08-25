@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nomo-air/config-repo
+          username: nomo-air
+          password: 123qweasd
+          # 设置本地库
+          # basedir: 本地地址，不要和项目放在一起
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+# 暴露bus-refresh接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+# 可以使用WebHooks自动刷新
