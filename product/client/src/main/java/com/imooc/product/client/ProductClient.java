@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@FeignClient(name = "product")
+@FeignClient(name = "product", fallback = ProductClientFallback.class)
 public interface ProductClient {
 
     @PostMapping("/product/listForOrder")

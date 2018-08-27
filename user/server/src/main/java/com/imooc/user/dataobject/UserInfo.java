@@ -1,9 +1,9 @@
 package com.imooc.user.dataobject;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 
 @Data

@@ -77,4 +77,9 @@ public class OrderServiceImpl implements OrderService {
         orderMasterRepository.save(orderMaster);
         return orderDTO;
     }
+
+    @Override
+    public OrderDTO finish(String orderId) {
+        return null;
+    }
 }
